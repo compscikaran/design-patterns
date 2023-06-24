@@ -46,6 +46,25 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <version>5.2.0</version>
             <scope>test</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.clojure</groupId>
+            <artifactId>clojure</artifactId>
+            <version>1.10.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.clojure</groupId>
+            <artifactId>java.jdbc</artifactId>
+            <version>0.7.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jruby</groupId>
+            <artifactId>jruby-complete</artifactId>
+            <version>9.4.3.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>
