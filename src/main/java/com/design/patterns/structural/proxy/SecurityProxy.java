@@ -14,7 +14,10 @@ public class SecurityProxy implements InvocationHandler {
     }
 
     public static Object newInstance(Object obj) {
-        return Proxy.newProxyInstance(obj.getClass().getClassLoader(), obj.getClass().getInterfaces(), new SecurityProxy(obj));
+        return Proxy.newProxyInstance(
+                obj.getClass().getClassLoader(),
+                obj.getClass().getInterfaces(),
+                new SecurityProxy(obj));
     }
 
     @Override
